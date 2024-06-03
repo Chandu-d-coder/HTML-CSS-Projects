@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #c8e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styles */
+.container {
+  width: 80%;
+  background-color: white;
+  padding: 20px 35px 40px 10px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left side styles */
+.container .content .left-side,
+.right-side {
+  height: 100%;
+}
+
+.container .content .left-side {
+  width: 25%;
+  padding: 0 20px 10 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Left side before pseudo-element */
+.container .content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 2px;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #afafb6;
+}
+
+.container .content .left-side .text-one,
+.container .content .left-side .text-two {
+  color: #757576;
+  font-size: 15px;
+}
+
+.container .content .left-side i {
+  color: #3e3093;
+  font-size: 25px;
+}
+
+.container .content .left-side .topic {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left-side .details {
+  margin: 15px;
+  text-align: center;
+}
+
+/* Right side styles */
+.container .content .right-side {
+  width: 75%;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.container .content .right-side .topic-text {
+  color: #3e3093;
+  font-size: 25px;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+.container .content .right-side p {
+  text-align: justify;
+}
+
+.container .content .right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  margin-top: 10px;
+}
+
+.container .content .right-side .input-box input,
+.container .content .right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: #f0f1f8;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  margin-block: 10px;
+}
+
+.container .content .right-side .message-box {
+  min-height: 110px;
+  margin-top: 15px;
+}
+
+.container .content .right-side button {
+  color: white;
+  font-size: 16px;
+  background: #3e3093;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  margin: 8px auto 0 2px;
+  margin-top: 15px;
+}
+
+.container .content .right-side button:hover {
+  background: #20117d;
+}
+
+.container .content .right-side button:active {
+  transform: translateY(0.8px);
+}
+
+/* Media queries */
+@media (max-width: 1130px) {
+  .container {
+    width: 90%;
+    padding: 20px 40px 40px 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    height: 100%;
+    margin: 40px;
+    padding: 25px 35px;
+  }
+
+  .container .content {
+    flex-direction: column-reverse;
+  }
+
+  .container .content .right-side {
+    margin: 15px;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .container .content .left-side {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px 25px 5px 30px;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .container .content .left-side::before {
+    display: none;
+  }
+}

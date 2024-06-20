@@ -5,15 +5,6 @@ Welcome to a collection of projects showcasing proficiency in HTML and CSS, fund
 
 This repository serves as a collection of various web development projects built using HTML and CSS. It provides a platform for developers of all skill levels to explore fundamental web development concepts, practice their coding abilities, and discover new techniques.
 
-## Projects
-
-- 
--
--
--
--
--
-
 ## Usage
 Each project is self-contained within its directory. To view the project, simply open the respective HTML file in a web browser. Additionally, feel free to explore and modify the CSS files to experiment with different styles and layouts.
 
